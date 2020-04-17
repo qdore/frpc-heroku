@@ -15,4 +15,4 @@ plugin = http_proxy
 
 EOF
 
-/frpc/frpc -c /frpc/frpc.ini &
+/frpc/frpc -c /frpc/frpc.ini
