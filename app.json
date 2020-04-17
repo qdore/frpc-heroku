@@ -4,6 +4,12 @@
   "keywords": [
     "chausat"
   ],
+  "env": {
+		"server": {
+			"description": "frp server ip",
+			"value": "www.xxx.com"
+		}
+	},
   "repository": "https://github.com/KeithSu/frpc-heroku",
   "stack": "container"
 }
