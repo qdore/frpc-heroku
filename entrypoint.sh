@@ -4,9 +4,9 @@ cd /frpc
 
 cat <<-EOF > /frpc/frpc.ini
 [common]
-token=12345
-server_addr = www.keithsu.ga
-server_port = 7000
+token=${token}
+server_addr = ${server}
+server_port = ${port}
 
 [http_hero]
 type = tcp
