@@ -5,11 +5,19 @@
     "chausat"
   ],
   "env": {
-		"server": {
-			"description": "frp server ip",
-			"value": "www.xxx.com"
-		}
-	},
+	  "token": {
+		  "description": "frp server token",
+		  "value": "12345"
+	  },
+	  "server": {
+		  "description": "frp server ip",
+		  "value": "www.xxx.com"
+	  },
+	  "port": {
+		  "description": "frp server port",
+		  "value": 7000
+	  }
+  },
   "repository": "https://github.com/KeithSu/frpc-heroku",
   "stack": "container"
 }
