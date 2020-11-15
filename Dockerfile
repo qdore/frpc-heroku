@@ -5,7 +5,7 @@ ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 ENV TZ=Asia/Shanghai
-ENV FRP_VERSION 0.32.1
+ENV FRP_VERSION 0.34.2
 
 RUN wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_amd64.tar.gz \
     && tar -xf frp_${FRP_VERSION}_linux_amd64.tar.gz \
