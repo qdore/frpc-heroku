@@ -11,7 +11,7 @@ server_port = ${port}
 [http_hero]
 type = tcp
 remote_port = 6060
-plugin = http_proxy
+plugin = socks5
 
 EOF
 
