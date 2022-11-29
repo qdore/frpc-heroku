@@ -8,11 +8,14 @@ token=${token}
 server_addr = ${server}
 server_port = ${port}
 
-[http_hero]
+[ssh]
 type = tcp
-remote_port = 6060
-plugin = socks5
+local_ip = 127.0.0.1
+local_port = 6000
+remote_port = 16000
 
 EOF
 
-/frpc/frpc -c /frpc/frpc.ini
+/frpc/frpc -c /frpc/frpc.ini &
+
+/ss/shadowsocks2-linux -s 'ss://chacha20-ietf-poly1305:adore@:6000'
